@@ -6,5 +6,7 @@ package com.ningjiahao.phhlive.config;
 
 public class URLConstants {
     public static final String BASE_IMAGE_URL="http://static.moyougames.com/";
+    //最新
+    public static final String ZUI_XIN_URL = "http://live.9158.com/Room/GetNewRoomOnline";
 
 }
