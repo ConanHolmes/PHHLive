@@ -1,13 +1,12 @@
 package com.ningjiahao.phhlive.retrofitinterface;
 
 
+import com.ningjiahao.phhlive.bean.AdBean;
+import com.ningjiahao.phhlive.bean.HotDataBean;
 import com.ningjiahao.phhlive.bean.ZuiXinBean;
-
-import java.util.Map;
 
 import retrofit2.http.GET;
 import retrofit2.http.Query;
-import retrofit2.http.QueryMap;
 import retrofit2.http.Url;
 import rx.Observable;
 
@@ -16,7 +15,10 @@ import rx.Observable;
  */
 
 public interface MyRetrofitApi {
-
+    @GET
+    Observable<HotDataBean> getHotDataBean(@Url String str);
+    @GET
+    Observable<AdBean> getAdBean(@Url String str);
     @GET
     Observable<ZuiXinBean> getZuiXinBean(@Url String url, @Query("page") String page);
 

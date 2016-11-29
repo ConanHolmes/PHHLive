@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_live"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <io.vov.vitamio.widget.VideoView
+        android:id="@+id/vitamio_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <ProgressBar
+        android:id="@+id/progressbar_video"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/userImage_live"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/username_live"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/LookNum_live"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/gift_live"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@mipmap/icon_send_gift"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/task_live"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/task"
+            />
+        <ImageView
+            android:id="@+id/rank_live"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_rank"/>
+        <ImageView
+            android:id="@+id/share_live"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_share"/>
+        <ImageView
+            android:id="@+id/finish_live"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_close"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/publictalk_live"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@mipmap/icon_public_talk"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/privatetalk_live"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@mipmap/icon_private_talk"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
